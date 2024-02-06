@@ -1,7 +1,7 @@
-import {ButtonElement} from './styledComponents'
+import {ButtonElement, ButtonImage, ListItem} from './styledComponents'
 
 const Button = props => {
-  const {buttonDetails, generateGameResult} = props
+  const {buttonDetails, generateGameResult, lowerCaseId} = props
   const {id, imageUrl} = buttonDetails
 
   const onClickingButton = () => {
@@ -9,9 +9,15 @@ const Button = props => {
   }
 
   return (
-    <ButtonElement type="button" onClick={onClickingButton}>
-      {imageUrl}
-    </ButtonElement>
+    <ListItem>
+      <ButtonElement
+        type="button"
+        onClick={onClickingButton}
+        data-testid={`${lowerCaseId}Button`}
+      >
+        <ButtonImage src={imageUrl} alt={id} />
+      </ButtonElement>
+    </ListItem>
   )
 }
 

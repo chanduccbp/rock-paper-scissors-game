@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Popup from 'reactjs-popup'
-import {RiCloseLine} from 'react-icons'
+import {RiCloseLine} from 'react-icons/ri'
 import GameResults from '../GameResults'
 import Button from '../Button'
 import {
@@ -43,6 +43,7 @@ class GameView extends Component {
             key={eachObj.id}
             buttonDetails={eachObj}
             generateGameResult={this.generateGameResult}
+            lowerCaseId={eachObj.id.toLowerCase()}
           />
         ))}
       </ButtonsContainer>

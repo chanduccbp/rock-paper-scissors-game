@@ -2,6 +2,7 @@ import {
   ResultContainer,
   Heading,
   OptionImage,
+  OptionsComparingContainer,
   OptionContainer,
   ResultText,
   PlayAgainButton,
@@ -16,14 +17,16 @@ const GameResults = props => {
 
   return (
     <ResultContainer>
-      <OptionContainer>
-        <Heading>YOU</Heading>
-        <OptionImage src={yourChoiceImage} alt="your choice" />
-      </OptionContainer>
-      <OptionContainer>
-        <Heading>OPPONENT</Heading>
-        <OptionImage src={opponentChoiceImage} alt="opponent choice" />
-      </OptionContainer>
+      <OptionsComparingContainer>
+        <OptionContainer>
+          <Heading>YOU</Heading>
+          <OptionImage src={yourChoiceImage} alt="your choice" />
+        </OptionContainer>
+        <OptionContainer>
+          <Heading>OPPONENT</Heading>
+          <OptionImage src={opponentChoiceImage} alt="opponent choice" />
+        </OptionContainer>
+      </OptionsComparingContainer>
       <ResultText>{resultText}</ResultText>
       <PlayAgainButton type="button" onClick={onClickingPlayAgain}>
         PLAY AGAIN
