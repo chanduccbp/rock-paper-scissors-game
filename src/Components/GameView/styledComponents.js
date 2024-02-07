@@ -15,38 +15,40 @@ export const TitleAndScoreContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  width: 70%;
+  width: 75%;
   height: 20vh;
   border-radius: 10px;
 `
 export const Title = styled.h1`
   color: #ffffff;
   font-family: 'Bree Serif';
+  width: 20%;
 `
 export const ScoreBox = styled.div`
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
   color: #223a5f;
   font-family: 'Bree Serif';
   padding: 40px;
   border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 `
 
 export const ScoreText = styled.p`
   font-weight: bold;
   font-size: x-large;
-  border-style: solid;
+  margin: 0px;
 `
 
 export const Score = styled.h1`
   font-family: 'Roboto';
   font-size: xx-large;
-  border-style: solid;
+  margin: 0px;
 `
 
 export const ButtonsContainer = styled.ul`
@@ -62,7 +64,7 @@ export const RulesButton = styled.button`
   background-color: #ffffff;
   border-radius: 7px;
   height: 35px;
-  padding: 10px;
+  padding: 5px;
   color: #223a5f;
   font-family: 'Bree Serif';
 `

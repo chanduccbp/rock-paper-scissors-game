@@ -37,7 +37,7 @@ export const PlayAgainButton = styled.button`
   background-color: #ffffff;
   border-radius: 7px;
   height: 35px;
-  padding: 10px;
+  padding: 5px;
   color: #223a5f;
   font-family: 'Bree Serif';
 `
